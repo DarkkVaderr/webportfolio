@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Full Stack Web Developer</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="#landing">Home</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#tools">Tools</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="hero">
+        <h1>Rikko Miguel M. Rafa</h1>
+        <p>
+          Full Stack Web Developer
+        </p>
+        <p>Graduating student of Southern Luzon State University, Student of Zuitt </p>
+        <div class="scroll-indicator"></div>
+      </div>
+    </header>
+
+    <section id="projects" class="container">
+      <h2>Projects</h2>
+      <div class="image-gallery">
+        <img src="images/project1.jpg" alt="Project 1" />
+       
+        <img src="images/project2.jpg" alt="Project 2" />
+      
+        <img src="images/project3.jpg" alt="Project 3" />
+       
+        </p>
+        <img src="images/project 4.jpg" alt="Project 4" />
+        
+      </div>
+    </section>
+
+    <h3 class="text-center mt-3">Tools</h3>
+
+        <div id="tools" class="d-flex flex-md-column">
+          <div id="tools-1" class="d-md-flex justify-content-center">
+            <img
+              width="150"
+              src="https://1000logos.net/wp-content/uploads/2020/08/MongoDB-Logo.png"
+            />
+            <img
+              width="150"
+              src="https://logowik.com/content/uploads/images/nodejs.jpg"
+            />
+            
+            <img
+              width="150"
+              src="https://dwglogo.com/wp-content/uploads/2017/09/1460px-React_logo.png"
+            />
+            <img
+              width="150"
+              src="https://logowik.com/content/uploads/images/heroku8748.jpg"
+            />
+          </div>
+          <div id="tools-2" class="d-md-flex justify-content-center">
+            <img
+              width="150"
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Git_icon.svg/2048px-Git_icon.svg.png"
+            />
+            <img
+              width="150"
+              src="https://upload.wikimedia.org/wikipedia/en/d/d2/Sublime_Text_3_logo.png"
+            />
+            <img
+              width="150"
+              src="https://cdn.worldvectorlogo.com/logos/postman.svg"
+            />
+            <img
+              width="150"
+              src="https://cdn4.iconfinder.com/data/icons/logos-and-brands/512/144_Gitlab_logo_logos-512.png"
+            />
+          </div>
+        </div>
+
+    <section id="contact" class="contact-section">
+      <h2>Contact</h2>
+      <div class="social-media">
+        <a href="https://www.linkedin.com" target="_blank"
+        ><img src="images/104493_linkedin_icon.png" alt="LinkedIn"
+      /></a>
+
+      <a href="https://www.facebook.com" target="_blank"
+        ><img
+          src="images/317727_facebook_social media_social_icon.png"
+          alt="Facebook"
+      /></a>
+
+      <a href="https://github.com" target="_blank"
+        ><img
+          src="images/291716_github_logo_social network_social_icon.png"
+          alt="GitHub"
+      /></a>
+
+      <a href="https://gitlab.com" target="_blank"
+        ><img src="images/4373151_gitlab_logo_logos_icon.png" alt="GitLab"
+      /></a>
+      </div>
+      <div class="contact-content">
+        <div class="map-container">
+          <iframe
+            src="https://www.google.com/maps/place/Calle+Budin/@14.0255485,121.5932989,18z/data=!4m6!3m5!1s0x33bd4d62b529aaff:0xded3bbcd434c0ce9!8m2!3d14.0257613!4d121.5940996!16s%2Fg%2F1tg9q6xg?entry=ttu"
+            height="500"
+            style="border: 0"
+            loading="lazy"
+          ></iframe>
+        </div>
+        <div class="form-container">
+          <h3>Message Us</h3>
+          <form id="contactForm">
+            <div class="form-group">
+              <label for="name">Full Name</label>
+              <input
+                type="text"
+                class="form-control"
+                id="name"
+                placeholder="Full Name"
+              />
+            </div>
+            <div class="form-group">
+              <label for="email">Email Address</label>
+              <input
+                type="email"
+                class="form-control"
+                id="email"
+                placeholder="Email"
+              />
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea class="form-control" id="message" rows="3"></textarea>
+            </div>
+            <button type="submit" class="btn btn-submit">Send</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <p>&copy; No Copyright infrigment intended</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+      document
+        .getElementById("contactForm")
+        .addEventListener("submit", function (event) {
+          event.preventDefault();
+          document.querySelector(".form-container").innerHTML =
+            "<h3>Thank you for your message!</h3>";
+        });
+    </script>
+  </body>
+</html>
