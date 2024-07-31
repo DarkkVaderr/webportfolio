@@ -45,7 +45,7 @@ nav ul li a {
     font-weight: bold;
 }
 
-.hero {
+.landing {
     height: 100vh;
     background-image: url(images/barongrikko.jpg);
     background-size: cover;
