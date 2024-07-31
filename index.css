@@ -57,12 +57,12 @@ nav ul li a {
     text-align: center;
 }
 
-.hero h1 {
+.landing h1 {
     font-size: 3em;
     margin: 0;
 }
 
-.hero p {
+.landing p {
     font-size: 1.5em;
     font-family: "Montserrat", sans-serif;
     font-optical-sizing: auto;
